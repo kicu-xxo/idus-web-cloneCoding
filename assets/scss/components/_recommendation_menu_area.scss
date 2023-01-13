@@ -1,0 +1,78 @@
+
+.recommendation-title {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    font-size: 14px;
+    color: $booking-color-text3;
+    background-color: #fff;
+    margin-right: 37px;
+    top: 0;
+    left: 0;
+    right: 1px;
+}
+
+.recommendation-menu-area {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    letter-spacing: -1px;
+    background-color: #fff;
+    border-top: 1px solid $booking-color-border1;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%), 0 1px 0 0 #d9d9d9;
+    z-index: 90000;
+    transition: all .1s;
+    height: 0;
+    overflow: hidden;
+    
+    .menu-item {
+        display: flex;
+        margin: 4px;
+        height: 37px;
+        justify-content: space-around;
+        align-items: center;
+        
+        border: 1px solid $booking-color-border1;
+        border-radius: 2px;
+    
+        .menu-title {
+            padding: 10px 11px;
+            font-size: 12px;
+            font-weight: 400;
+            color: $booking-color-text3;
+        }
+    
+        &.is-active {
+            border-color: $booking-color-main;
+            
+            .menu-title {
+                color: $booking-color-main;
+            }
+        }
+    }
+}
+
+#menuCheckbox1 {
+    display: none;
+}
+
+.category-list-btn {
+    cursor: pointer;
+}
+
+#menuCheckbox1:checked + label svg {
+    transform: rotate(180deg);
+}
+
+#menuCheckbox1:checked + label + div + .recommendation-menu-area {
+    padding: 12px;
+    height: 205px;
+}
+
+#menuCheckbox1:checked + label + div {
+    display: flex;
+}

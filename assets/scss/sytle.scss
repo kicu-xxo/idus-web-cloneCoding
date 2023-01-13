@@ -1,0 +1,18 @@
+@import "./abstracts/mixin_common";
+@import "./abstracts/variables";
+@import "./abstracts/variables_color";
+
+
+@import "./base/preset";
+
+
+@import "./components/category_list_area";
+@import "./components/event_alret_area";
+@import "./components/header_area";
+@import "./components/footer_area";
+@import "./components/more_btn_area";
+@import "./components/real_time_item_con";
+@import "./components/real_time_area";
+@import "./components/recommendation_menu_area";
+
+@import "./pages/main_page";

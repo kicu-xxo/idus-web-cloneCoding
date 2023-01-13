@@ -1,0 +1,32 @@
+.event-alret-area {
+    position: relative;
+    width: 100%;
+    z-index: 5000;
+
+    .event-img {
+        width: 100%;
+    }
+
+    .page-count {
+        position: absolute;
+        text-align: center;
+        background-color: #00000080;
+        border-radius: 10px;
+        width: 50px;
+        right: 30px;
+        bottom: 30px;
+
+
+        .page-number {
+            display: inline;
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        .total-page {
+            display: inline;
+            color: #ccc;
+            font-size: 14px;
+        }
+    }
+}

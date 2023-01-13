@@ -1,0 +1,72 @@
+.real-time-area {
+    position: relative;
+    width: 100%;
+    padding: $m-padding;
+    
+    .real-time-header {
+        position: sticky;
+        top: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 4px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid $booking-color-border1;
+        background-color: #fff;
+        z-index: 6000;
+
+        .header-title-box {
+            width: 65%;
+            padding-bottom: 5px;
+            .header-title {
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: -0.5px;
+                color: #333333;
+            }
+        }
+
+        .area-control {
+            display: flex;
+
+            .page-nums {
+                display: flex;
+                margin: 0 16px;
+                .page-num {
+                    font-size: 14px;
+                    font-weight: bolder;
+                    color: #000;
+    
+                }
+    
+                .page-total {
+                    font-size: 14px;
+                    color: $booking-color-text1;
+                }
+            }
+
+            .page-btn {
+                width: 24px;
+                height: 24px;
+                line-height: 2px;
+
+                .ico-chevron {
+                    width: 10px;
+                    height: 10px;
+                    color: $booking-color-text3;
+                }
+            }
+
+            .btn-before {
+                border: 1px solid $booking-color-border1;
+                border-right: none;
+                border-radius: 2px 0 0 2px;
+            }
+
+            .btn-after {
+                border: 1px solid $booking-color-border1;
+                border-radius: 0px 2px 2px 0;
+            }
+        }
+    }
+}

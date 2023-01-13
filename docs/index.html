@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아이디어스</title>
+    <link rel="stylesheet" href="../assets/css/sytle.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- header area -->
+      <div class="header-area">
+        <div class="header-search-box">
+          <div class="logo-img-box">
+            <a href="#">
+              <img
+                class="logo-img"
+                src="https://cdn.idus.kr/www/b8139ae60a13c28411b67299e4f0dbc50fcb702d/resources/dist/images/logo.svg"
+                alt="아이디어스 로고"
+                width="60px"
+                height="24px"
+              />
+            </a>
+          </div>
+          <div class="search-box">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="크리스마스를 검색해보세요."
+            />
+            <button class="search-btn">
+              <svg
+                class="ico-search"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="cart-box">
+            <a href="#">
+              <svg
+                class="ico-cart"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+              <span class="cart-badge">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- header area END -->
+
+      <!-- category list area -->
+      <div class="category-list-area">
+        <ul class="category-list scroll-x">
+          <li class="category-list-item is-active">
+            <a href="#">홈</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">실시간 구매</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">실시간 후기</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">작가님 추천</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">실시간 추천</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">인기작품</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">작가 피드</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">매거진</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">최신 작품</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">인기작가</a>
+          </li>
+          <li class="category-list-item">
+            <a href="#">소담상회</a>
+          </li>
+        </ul>
+        <!-- <div class="recommendation-menu-title">추천 메뉴</div> -->
+        <input type="checkbox" id="menuCheckbox1" />
+        <label for="menuCheckbox1" class="category-list-btn">
+          <svg
+            class="ico-chevron-down"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </label>
+        <!-- recommendation-menu-area -->
+        <div class="recommendation-title">추천 메뉴</div>
+        <ul class="recommendation-menu-area">
+          <li class="menu-item is-active">
+            <a class="menu-title" href="#">홈</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-title" href="#">실시간 구매</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-title" href="#">실시간 후기</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-title" href="#">작가님 추천</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-title" href="#">실시간 추천</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-title" href="#">인기 작품</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-title" href="#">작가 피드</a>
+          </li>
+          <li class="menu-item"><a class="menu-title" href="#">매거진</a></li>
+          <li class="menu-item">
+            <a class="menu-title" href="#">최신 작품</a>
+          </li>
+          <li class="menu-item"><a class="menu-title" href="#">인기작가</a></li>
+          <li class="menu-item"><a class="menu-title" href="#">소담상회</a></li>
+        </ul>
+        <!-- recommendation-menu-area END -->
+      </div>
+      <!-- category list area END -->
+
+      <!-- event alret area -->
+      <div class="event-alret-area">
+        <img
+          class="event-img"
+          src="	https://image.idus.com/image/files/1b142e27b9f146f2b85f81f7703cf71f.jpg"
+          alt=""
+        />
+        <div class="page-count">
+          <p class="page-number">1</p>
+          <p class="total-page">/14</p>
+        </div>
+      </div>
+      <!-- event alret area END -->
+
+      <!-- 실시간 구매 area -->
+      <div class="real-time-area">
+        <!-- 실시간 구매  header con -->
+        <div class="real-time-header">
+          <a class="header-title-box" href="#">
+            <span class="header-title">실시간 구매</span>
+          </a>
+          <div class="area-control">
+            <div class="page-nums">
+              <p class="page-num">1</p>
+              <p class="page-total">/5</p>
+            </div>
+            <button class="page-btn btn-before">
+              <svg
+                class="ico-chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                />
+              </svg>
+            </button>
+            <button class="page-btn btn-after">
+              <svg
+                class="ico-chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- 실시간 구매  header con END -->
+
+        <!-- 실시간 구매 아이템 con -->
+        <div class="real-time-item-con">
+          <div class="real-time-items item1">
+            <a class="item-img-box" href="#">
+              <img
+                class="item-img"
+                src="../assets/images/Coffee2.png"
+                alt="더치커피"
+              />
+              <button class="favorite-btn">
+                <svg
+                  class="ico-heart"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  />
+                </svg>
+              </button>
+            </a>
+
+            <div class="item-content">
+              <div class="producer-name">엘리펀트 커피랩</div>
+              <div class="item-title">
+                🔥반값할인🔥대용량 더치커피 1리터 크리스마스 행사
+              </div>
+            </div>
+
+            <div class="review-box">
+              <div class="score">
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+              </div>
+              <div class="review">
+                사용자가 남긴 리뷰가 적히는 공간 대충 맛있게 잘 먹었다는 리뷰
+                내용
+              </div>
+            </div>
+          </div>
+          <div class="real-time-items item2">
+            <a class="item-img-box" href="#">
+              <img
+                class="item-img"
+                src="../assets/images/Coffee2.png"
+                alt="더치커피"
+              />
+              <button class="favorite-btn">
+                <svg
+                  class="ico-heart"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  />
+                </svg>
+              </button>
+            </a>
+
+            <div class="item-content">
+              <div class="producer-name">엘리펀트 커피랩</div>
+              <div class="item-title">
+                🔥반값할인🔥대용량 더치커피 1리터 크리스마스 행사
+              </div>
+            </div>
+
+            <div class="review-box">
+              <div class="score">
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+              </div>
+              <div class="review">
+                사용자가 남긴 리뷰가 적히는 공간 대충 맛있게 잘 먹었다는 리뷰
+                내용
+              </div>
+            </div>
+          </div>
+          <div class="real-time-items item3">
+            <a class="item-img-box" href="#">
+              <img
+                class="item-img"
+                src="../assets/images/Coffee2.png"
+                alt="더치커피"
+              />
+              <button class="favorite-btn">
+                <svg
+                  class="ico-heart"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  />
+                </svg>
+              </button>
+            </a>
+
+            <div class="item-content">
+              <div class="producer-name">엘리펀트 커피랩</div>
+              <div class="item-title">
+                🔥반값할인🔥대용량 더치커피 1리터 크리스마스 행사
+              </div>
+            </div>
+
+            <div class="review-box">
+              <div class="score">
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+              </div>
+              <div class="review">
+                사용자가 남긴 리뷰가 적히는 공간 대충 맛있게 잘 먹었다는 리뷰
+                내용
+              </div>
+            </div>
+          </div>
+          <div class="real-time-items item4">
+            <a class="item-img-box" href="#">
+              <img
+                class="item-img"
+                src="../assets/images/Coffee2.png"
+                alt="더치커피"
+              />
+              <button class="favorite-btn">
+                <svg
+                  class="ico-heart"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  />
+                </svg>
+              </button>
+            </a>
+
+            <div class="item-content">
+              <div class="producer-name">엘리펀트 커피랩</div>
+              <div class="item-title">
+                🔥반값할인🔥대용량 더치커피 1리터 크리스마스 행사
+              </div>
+            </div>
+
+            <div class="review-box">
+              <div class="score">
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+                <i class="ico-star"
+                  ><svg
+                    ico-star
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    /></svg
+                ></i>
+              </div>
+              <div class="review">
+                사용자가 남긴 리뷰가 적히는 공간 대충 맛있게 잘 먹었다는 리뷰
+                내용
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 실시간 구매 아이템 con END -->
+
+        <!-- 더보기 btn -->
+        <a class="more-btn" href="#">실시간 구매 더보기</a>
+        <!-- 더보기 btn END -->
+      </div>
+      <!-- 실시간 구매 area END -->
+
+      <!-- footre area -->
+      <div class="footer-area">
+        <a href="#" class="category-btn is-active">
+          <i class="ico-box">
+            <svg
+              class="ico-footer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"
+              />
+            </svg>
+          </i>
+          작품
+        </a>
+        <a href="#" class="category-btn">
+          <i class="ico-box">
+            <svg
+              class="ico-footer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"
+              />
+            </svg>
+          </i>
+          클래스
+        </a>
+        <a href="#" class="category-btn">
+          <i class="ico-box">
+            <svg
+              class="ico-footer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="$booking-main-color"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </i>
+          검색
+        </a>
+        <a href="#" class="category-btn">
+          <i class="ico-box">
+            <svg
+              class="ico-footer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </i>
+          카테고리
+        </a>
+        <a href="#" class="category-btn">
+          <i class="ico-box">
+            <svg
+              class="ico-footer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+              />
+            </svg>
+          </i>
+          내 정보
+        </a>
+      </div>
+      <!-- footre area END -->
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
