@@ -27,8 +27,8 @@
 
 ## 📸Screenshot📸
 
-<img width = 60%; src ='https://user-images.githubusercontent.com/121851869/212669529-24ba2d9c-8e56-45c8-8d14-820bfd1b6b13.PNG'></img>
+<img width = 30%; src ='https://user-images.githubusercontent.com/121851869/212669529-24ba2d9c-8e56-45c8-8d14-820bfd1b6b13.PNG'></img>
 </br>
-<img width = 60%; src ='https://user-images.githubusercontent.com/121851869/212669537-08309602-0626-4513-9266-e569c8a757de.PNG'></img>
+<img width = 30%; src ='https://user-images.githubusercontent.com/121851869/212669537-08309602-0626-4513-9266-e569c8a757de.PNG'></img>
 </br>
-<img width = 60%; src ='https://user-images.githubusercontent.com/121851869/212669544-4669c3a4-d05a-4013-87ec-7df6d7027951.PNG'></img>
+<img width = 30%; src ='https://user-images.githubusercontent.com/121851869/212669544-4669c3a4-d05a-4013-87ec-7df6d7027951.PNG'></img>
