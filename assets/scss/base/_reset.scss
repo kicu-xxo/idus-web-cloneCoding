@@ -1,0 +1,121 @@
+body {
+    min-width: 320px;
+    line-height: normal;
+    font-size: 14px;
+    color: $booking-color-text1;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+input,
+textarea,
+select,
+table,
+button,
+code {
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none; // 선택 효과 제거
+    }
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer; //버튼에 올렸을 때 커서 모양
+    &:disabled {
+        cursor: not-allowed;
+    } // disabled 속성이면 버튼이 비활성화 되면서 커서에 클릭 불가능 로고 뜸
+}
+
+select,
+input,
+textarea,
+button {
+    -webkit-appearance: none; //웹에서 기본적으로 제공하는 스타일 제거
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; //-moz- 가 들어가면 파이어폭스 계열 스타일
+}
+
+input:disabled {
+    background-color: rgba(255, 255, 255, 0); 
+    cursor: not-allowed;
+}
+
+select {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+input,
+textarea {
+    font-size: inherit;
+    border: 0;
+    &::placeholder {
+        /* Chrome, Safari, Firefox */
+        color: #444;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder {
+        /* IE, Edge */
+        color: #444;
+        opacity: 1;
+    }
+    &[readonly],
+    &:disabled {
+        &::placeholder {
+            /* Chrome, Safari, Firefox */
+            color: rgba(#000, 0.2);
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            /* IE, Edge */
+            color: rgba(#000, 0.2);
+            opacity: 1;
+        }
+    }
+    &::-ms-clear, // 기본적으로 제공하는 input clear botton 제거 시작 부분
+    &::-ms-reveal {
+        /* IE, Edge */
+        display: none;
+    } // 폼 제거버튼 제거 끝부분
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+}
